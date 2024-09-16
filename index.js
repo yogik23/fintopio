@@ -405,11 +405,7 @@ async main() {
             ==SKW Airdrop Hunter==
         `;
 
-        const currentTime = Date.now();
-        if (currentTime - lastReportTime >= ONE_HOUR) {
-            await this.sendTelegramMessage(reportMessage);
-            lastReportTime = currentTime;
-        }
+        await this.sendTelegramMessage(reportMessage);
 
         const listTime = timeWait.get(keyTime) || [];
         if (Array.isArray(listTime) && listTime.length > 0) {
@@ -424,6 +420,7 @@ async main() {
         } else {
             await this.waitWithCountdown(5);
         }
+
     }
 }
 
