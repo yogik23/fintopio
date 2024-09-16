@@ -359,8 +359,6 @@ async main() {
         let time = [];
         let totalAccounts = 0;
         let totalBalance = 0;
-        let successfulLogins = 0;
-        let failedLogins = 0;
 
         for (let i = 0; i < users.length; i++) {
             const userData = users[i];
@@ -395,11 +393,7 @@ async main() {
 
             🤖<b>Total Accounts:</b> ${totalAccounts}
             💎<b>Total Balance:</b> ${totalBalance.toFixed(3)}
-            🕓<b>Daily Login:</b>
-            <b>Sukses</b> (${successfulLogins})
-            <b>Gagal</b> (${failedLogins})
-
-            <b>Quest Gagal:</b> Selesaikan Manual
+ 
 
 
             ==SKW Airdrop Hunter==
