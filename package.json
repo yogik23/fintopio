@@ -14,7 +14,8 @@
     "moment": "^2.29.4",
     "fs-extra": "^11.1.0",
     "child_process": "^1.0.2",
-    "figlet": "^1.5.2"
+    "figlet": "^1.5.2",
+    "dotenv": "^16.3.1"
   },
   "engines": {
     "node": ">=14.0.0"
