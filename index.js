@@ -369,7 +369,6 @@ async main() {
             const token = await this.auth(userData);
 
             if (token) {
-                successfulLogins++;
                 this.log(`Login successful!`.green);
 
                 const profile = await this.getProfile(token);
