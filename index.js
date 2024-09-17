@@ -382,8 +382,6 @@ async main() {
                     await this.handleDiamond(token);
                     await this.handleFarming(token);
                 }
-            } else {
-                failedLogins++;
             }
         }
 
